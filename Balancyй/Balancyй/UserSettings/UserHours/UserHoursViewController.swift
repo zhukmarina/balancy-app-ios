@@ -11,9 +11,7 @@ import SwiftUI
 final class UserHoursViewController: UIViewController {
     
     // Properties
-    
-    private let userPreferenceManager: UserPreferenceManager
-    
+        
     private let hoursArray = Array(1...24)
     private let minutesArray = Array(0...59)
     
@@ -84,17 +82,6 @@ final class UserHoursViewController: UIViewController {
         return button
     }()
     
-    // Initialize
-    
-    init(userPreferenceManager: UserPreferenceManager) {
-        self.userPreferenceManager = userPreferenceManager
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     // Lifecycle
 
     override func viewDidLoad() {
@@ -143,7 +130,8 @@ final class UserHoursViewController: UIViewController {
     }
     
     private func saveTime() {
-        userPreferenceManager.saveTime(hour: selectedHour, minute: selectedMinute)
+        let timeBalance = TimeBalance(hour: selectedHour, minute: selectedMinute)
+        UserDefaults.save(timeBalance: timeBalance)
     }
     
     @objc private func didTapReturnButton() {
