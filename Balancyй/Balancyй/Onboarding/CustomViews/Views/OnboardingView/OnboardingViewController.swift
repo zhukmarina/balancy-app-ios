@@ -9,6 +9,9 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
+    
+    @IBOutlet weak var skipButton: UIButton!
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var firstButton: UIButton!
@@ -41,20 +44,33 @@ class OnboardingViewController: UIViewController {
         
     }
     
-    
-    @IBAction func firstButtonClicked(_ sender: UIButton) {
-        if currentPage == slides.count - 1 {
-            let controller = storyboard?.instantiateViewController(withIdentifier: "customTabBarViewController") as! UIViewController
-            controller.modalPresentationStyle = .fullScreen
-            controller.modalTransitionStyle = .crossDissolve
-            present(controller, animated: true, completion: nil)
-        } else {
-            currentPage += 1
-            let indexPath = IndexPath(item: currentPage, section: 0)
-            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+    @IBAction func skipButtonClicked(_ sender: Any) {
+        
+        guard let controller = storyboard?.instantiateViewController(withIdentifier: "customTabBarViewController") as? UIViewController else {
+            return
         }
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .crossDissolve
+        present(controller, animated: true, completion: nil)
         
     }
+    
+    @IBAction func firstButtonClicked(_ sender: UIButton) {
+  
+            if currentPage == slides.count - 1 {
+                guard let controller = storyboard?.instantiateViewController(withIdentifier: "customTabBarViewController") as? UIViewController else {
+                    return
+                }
+                controller.modalPresentationStyle = .fullScreen
+                controller.modalTransitionStyle = .crossDissolve
+                present(controller, animated: true, completion: nil)
+            } else {
+                currentPage += 1
+                let indexPath = IndexPath(item: currentPage, section: 0)
+                collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            }
+        }
+    
     
 }
 

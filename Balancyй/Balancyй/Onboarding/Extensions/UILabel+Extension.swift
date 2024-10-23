@@ -13,7 +13,7 @@ extension UILabel {
         let strNumber: NSString = fullText as NSString
         let range = (strNumber).range(of: changeText)
         let attribute = NSMutableAttributedString.init(string: fullText)
-        attribute.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(named: "customColorForOnboarding") , range: range)
+        attribute.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(named: "customColorForOnboarding") as Any , range: range)
         self.attributedText = attribute
     }
 }
