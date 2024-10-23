@@ -9,7 +9,6 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
-    
     @IBOutlet weak var skipButton: UIButton!
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -44,35 +43,36 @@ class OnboardingViewController: UIViewController {
         
     }
     
+    
     @IBAction func skipButtonClicked(_ sender: Any) {
-        
-        guard let controller = storyboard?.instantiateViewController(withIdentifier: "customTabBarViewController") as? UIViewController else {
-            return
-        }
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: nil)
-        
-    }
+          
+          guard let controller = storyboard?.instantiateViewController(withIdentifier: "customTabBarViewController") as? UIViewController else {
+              return
+          }
+          controller.modalPresentationStyle = .fullScreen
+          controller.modalTransitionStyle = .crossDissolve
+          present(controller, animated: true, completion: nil)
+          
+      }
+      
+      @IBAction func firstButtonClicked(_ sender: UIButton) {
     
-    @IBAction func firstButtonClicked(_ sender: UIButton) {
-  
-            if currentPage == slides.count - 1 {
-                guard let controller = storyboard?.instantiateViewController(withIdentifier: "customTabBarViewController") as? UIViewController else {
-                    return
-                }
-                controller.modalPresentationStyle = .fullScreen
-                controller.modalTransitionStyle = .crossDissolve
-                present(controller, animated: true, completion: nil)
-            } else {
-                currentPage += 1
-                let indexPath = IndexPath(item: currentPage, section: 0)
-                collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-            }
-        }
-    
-    
-}
+              if currentPage == slides.count - 1 {
+                  guard let controller = storyboard?.instantiateViewController(withIdentifier: "customTabBarViewController") as? UIViewController else {
+                      return
+                  }
+                  controller.modalPresentationStyle = .fullScreen
+                  controller.modalTransitionStyle = .crossDissolve
+                  present(controller, animated: true, completion: nil)
+              } else {
+                  currentPage += 1
+                  let indexPath = IndexPath(item: currentPage, section: 0)
+                  collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+              }
+          }
+      
+      
+  }
 
 extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     

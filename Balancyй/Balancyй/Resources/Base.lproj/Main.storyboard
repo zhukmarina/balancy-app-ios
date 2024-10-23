@@ -47,8 +47,8 @@
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="0.85098040100000005" green="0.19607841970000001" blue="0.32549020649999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="32" name=".SFNS-Regular"/>
-                                                                <font key="NSOriginalFont" size="32" name=".SFNS-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="32"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="32"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0">
                                                                     <lineBreakStrategy key="lineBreakStrategy" pushOut="YES"/>
                                                                 </paragraphStyle>
@@ -58,8 +58,8 @@
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="0.85098040100000005" green="0.19607841970000001" blue="0.32549020649999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="32" name=".SFNS-Regular"/>
-                                                                <font key="NSOriginalFont" size="32" name=".SFNS-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="32"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="32"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0">
                                                                     <lineBreakStrategy key="lineBreakStrategy" pushOut="YES"/>
                                                                 </paragraphStyle>
@@ -69,8 +69,8 @@
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="0.85098040100000005" green="0.19607841970000001" blue="0.32549020649999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="NSColor" red="0.85098040100000005" green="0.19607841970000001" blue="0.32549020649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <font key="NSFont" size="32" name=".SFNS-Regular"/>
-                                                                <font key="NSOriginalFont" size="32" name=".SFNS-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="32"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="32"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0">
                                                                     <lineBreakStrategy key="lineBreakStrategy" pushOut="YES"/>
                                                                 </paragraphStyle>
@@ -80,8 +80,8 @@
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="0.85098040100000005" green="0.19607841970000001" blue="0.32549020649999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="32" name=".SFNS-Regular"/>
-                                                                <font key="NSOriginalFont" size="32" name=".SFNS-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="32"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="32"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0">
                                                                     <lineBreakStrategy key="lineBreakStrategy" pushOut="YES"/>
                                                                 </paragraphStyle>
@@ -91,8 +91,8 @@
                                                             <attributes>
                                                                 <color key="NSBackgroundColor" red="0.85098040100000005" green="0.19607841970000001" blue="0.32549020649999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="32" name=".SFNS-Regular"/>
-                                                                <font key="NSOriginalFont" size="32" name=".SFNS-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="32"/>
+                                                                <font key="NSOriginalFont" metaFont="system" size="32"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="charWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0">
                                                                     <lineBreakStrategy key="lineBreakStrategy" pushOut="YES"/>
                                                                 </paragraphStyle>
