@@ -168,7 +168,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="firstButtonClicked:" destination="JwK-g5-4bM" eventType="touchUpInside" id="0Nj-Qa-46g"/>
+                                    <action selector="firstButtonTapped:" destination="JwK-g5-4bM" eventType="touchUpInside" id="ne0-pi-GDS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acp-9k-Bkw">
@@ -178,7 +178,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="skipButtonClicked:" destination="JwK-g5-4bM" eventType="touchUpInside" id="xKD-j1-g3x"/>
+                                    <action selector="skipButtonTapped:" destination="JwK-g5-4bM" eventType="touchUpInside" id="ds2-7T-Pit"/>
                                 </connections>
                             </button>
                         </subviews>
